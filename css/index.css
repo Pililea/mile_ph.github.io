@@ -1,0 +1,265 @@
+
+@font-face {
+    font-family: "photographer";
+    src: url(fuentes/Photographer.otf);
+}
+
+@font-face {
+    font-family: "keep calm";
+    src: url(fuentes/KeepCalm-Medium.ttf);
+}
+
+@font-face {
+    font-family: "kenyan";
+    src: url(fuentes/kenyan/kenyan\ coffee\ bd.otf);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: black 1px solid; */
+    padding: 0;
+}
+
+body{
+    background-image: url(imagenes/atardecer.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.cabecera_logo_principal {
+    height: 100px;
+    display: flex;
+    align-content: center;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.cabecera_principal {
+    position: absolute;
+}
+
+.logo{
+    /* display: inline-block;
+    position: relative; */
+    width: 75px;
+    height: 75px;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    display: flex;
+    align-items: start;
+    background-image: url(imagenes/mile-playa.jpg);
+    background-size: cover;
+    position: relative;
+    left: 80vw;
+    top: 10px;
+}
+
+.titulos { 
+    position: relative;
+    padding: 20px; 
+    top: -80px;
+}
+
+.titulo_cabecera {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "keep calm";
+    color: white;
+    border-bottom: white 2px solid;
+}
+
+.subtitulo_cabecera {
+    position: relative;
+    color: rgb(177, 147, 102);
+    text-align: center;
+}
+
+.menu {
+    background-color: aliceblue;
+    display: flex;
+    padding: 10px;
+}
+
+.menu_opcion {
+    margin:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(1rem,1.5vw,2rem);
+}
+
+.link_opcion{
+    color: black;
+    text-decoration-line: none;
+}
+
+.link_opcion:hover{
+    background-image: linear-gradient(to bottom, transparent, rgba(65, 51, 26, 0.438), transparent);
+    transition: all 2s;
+    border-bottom: black 1px solid;
+}
+
+.contenido {
+    display: inline-block;
+    background-color: rgba(122, 110, 118, 0.199);
+}
+
+.contenido_parrafo {
+    background-color: rgba(61, 46, 3, 0.733); 
+    padding: 3rem 4rem;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 75px;
+    margin-top: 20px;
+    background-image: url(imagenes/mile.jpg);
+    background-size: cover;
+    background-position-y:center ;
+    margin: 0 0 3rem ;
+    background-blend-mode:multiply; 
+    color: white;
+    font-size: 26px;
+    font-family: "keep calm";
+    font-weight: 200;
+
+
+    /* border: black 1px solid; */
+    
+}
+
+#catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes_de_presentacion {
+    width: clamp(150px,85vw,600px);
+    height: clamp(10em,80vw,90em);
+    margin: 0 auto;
+    background-position: center;
+    margin: 10px;
+    display: flex;
+}
+
+.texto_imagen {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(65, 55, 55, 0.548);
+    align-items: end;
+    justify-content: end;
+    margin: 75% auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: rgba(255, 255, 255, 0.534) 1px 1px;
+    overflow: hidden;
+}
+
+.img1 {
+    background-image: url(imagenes/coni.JPG);
+    background-size: cover;
+}
+
+.img2 {
+    background-size: cover;
+    background-image: url(imagenes/15.JPG);
+    background-position-y: top;
+}
+
+.img3 {
+    background-image: url(imagenes/casamiento2.jpg);
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url(imagenes/atarcecer2.JPG);
+    margin-bottom: 5rem;
+    background-size: cover;
+}
+
+#contacto {
+    width: 100%;
+   padding: 1rem;
+   color: white;
+   text-align: center;
+}
+
+.logos_de_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    
+   justify-content: center;
+   align-content: center;
+}
+
+.logo_redes {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 50%;
+}
+
+.instagram {
+    background-image: url(imagenes/instagram.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.facebook {
+    background-image: url(imagenes/facebook.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.whatsapp {
+    background-image: url(imagenes/whatsapp.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.linkedin {
+    background-image: url(imagenes/linkedin.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.pie {
+    background-color: black;
+    padding: 5%;
+    top: 0;
+    align-content: flex-end;
+    font-family: sans-serif;
+    font-size: small;
+}
+.mile {
+    color: darkgoldenrod;
+}
+
+@media (max-width:600px) {
+    .cabecera {
+        width: 101vw;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .titulos {
+        top: -3px;
+        background-color: black;
+        width: 102%;
+    }
+
+    .menu{
+        position: relative;
+        top: 35px;
+        padding: 20px 0;
+        width: 101%;
+    }
+
+    .menu_opcion {
+        padding: auto 0;
+
+    }
+}
